@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Browsers">
+    <listeners>
+        <listener class-name="utils.ListenerTest"/>
+    </listeners>
+    <test name = "RegressionChrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name = "test.TestCasesTools">
+            </class>
+        </classes>
+    </test>
+</suite>
